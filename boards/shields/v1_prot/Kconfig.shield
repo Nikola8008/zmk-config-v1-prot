@@ -1,0 +1,2 @@
+config SHIELD_V1_PROT
+    def_bool $(shields_list_contains,v1_prot)

@@ -1,0 +1,6 @@
+if SHIELD_V1_PROT
+
+config ZMK_KEYBOARD_NAME
+    default "v1-prot"
+
+endif # SHIELD_V1_PROT
