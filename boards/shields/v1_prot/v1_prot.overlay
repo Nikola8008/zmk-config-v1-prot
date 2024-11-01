@@ -8,6 +8,7 @@
 
 / {
     chosen {
+        zmk,kscan = &kscan;
         zmk,physical-layout = &default_layout;
     };
 
@@ -27,13 +28,13 @@
         a-gpios = <&pro_micro 2 GPIO_ACTIVE_HIGH | GPIO_PULL_UP>;
         b-gpios = <&pro_micro 3 GPIO_ACTIVE_HIGH | GPIO_PULL_UP>;
         status = "okay"
-
+        steps = <80>;
     };
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder>;
-        steps = <80>;
+        triggers-per-rotation = <20>;
     };
 
 };
